@@ -1,0 +1,43 @@
+{
+    "Categories" : [
+        "Description"
+    ],
+    "Items" : [
+        "Description",
+        "Category_id",
+        "Inventory",
+        "Price",
+        "Price_promo",
+        "Club_perc"
+    ],
+    "Gender" : [
+        "Description" // "Male", "Female", "Other"
+    ],
+    "Customers" : [     
+        "First_name",
+        "Last_name",
+        "Age",
+        "Is_admin",
+        "Is_club",
+        "Gender"
+    ],
+    "Branchs" : [
+        "Description",
+        "Address",
+        "Phone",
+        "Level"
+    ],
+    "Invoice" : [
+        "Branch_id",
+        "Customer_id",
+        "Total_value",
+        "Details",
+        "Is_active"
+    ],
+    "Sales_item" : [
+        "Invoice_id",
+        "Item_id",
+        "Price",
+        "Quantity"
+    ]
+}

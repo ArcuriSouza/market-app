@@ -1,0 +1,25 @@
+<h1>Branch#index</h1>
+
+<h1>Branch</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @branch.each do |i| %>
+      <tr>
+        <td><%= i.description %></td>
+        <td><%= link_to 'Show', i %></td>
+        <td><%= link_to 'Edit', edit_status_path(i) %></td>
+        <td><%= link_to 'Destroy', i, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+  <%= link_to "New branch", new_branch_path %>
+</table>
